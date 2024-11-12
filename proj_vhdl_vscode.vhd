@@ -47,7 +47,7 @@ architecture Behavioral of Proj_rev2 is
     
 begin
 
-    -- Detecção de borda de subida para `pinRun` e `pinReset`
+    -- Detecção de borda de subida para pinRun e pinReset
     process(clk)
     begin
         if rising_edge(clk) then
@@ -55,17 +55,17 @@ begin
             run_pressed <= pinRun;
             reset_pressed <= pinReset;
             
-            -- Latch de `run` se detectar um pulso
+            -- Latch de run se detectar um pulso
             if pinRun = '1' and run_pressed = '0' then
                 run_latched <= '1';
             end if;
             
-            -- Latch de `reset` se detectar um pulso
+            -- Latch de reset se detectar um pulso
             if pinReset = '1' and reset_pressed = '0' then
                 reset_latched <= '1';
             end if;
             
-            -- Reset manual do latch de `reset`
+            -- Reset manual do latch de reset
             if reset_latched = '1' then
                 reset_latched <= '0';
                 run_latched <= '0'; -- Desativa o latch de run ao resetar
