@@ -6,6 +6,8 @@
 
 O **Sistema de Segurança Pessoal (SSP)** é um projeto desenvolvido em **VHDL** que implementa uma **Máquina de Estados Finita (FSM)** para monitorar a presença de pessoas. Quando detectada a presença de alguém, o sistema desativa o motor e ativa um alarme sonoro e visual.
 
+## 🛠️ **Funcionamento do Sistema**
+
 ## Estados do Sistema
 
 1. **Inicial (INITIAL):**  
