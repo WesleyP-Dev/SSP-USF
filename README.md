@@ -1,6 +1,6 @@
 ### ReadMe.md
 
-# Sistema de Segurança Pessoal (SSP)
+# Sistema de Segurança Pessoal (SSP) - VHDL
 
 ## Descrição
 
